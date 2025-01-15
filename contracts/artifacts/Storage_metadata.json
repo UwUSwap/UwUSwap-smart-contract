@@ -1,10 +1,74 @@
 {
 	"compiler": {
-		"version": "0.8.26+commit.8a97fa7a"
+		"version": "0.8.2+commit.661d1103"
 	},
 	"language": "Solidity",
 	"output": {
 		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "user",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "value",
+						"type": "string"
+					}
+				],
+				"name": "StringStored",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_account",
+						"type": "address"
+					}
+				],
+				"name": "checkETHBalance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getValue",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address payable",
+						"name": "_receiver",
+						"type": "address"
+					}
+				],
+				"name": "giveEther",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
 			{
 				"inputs": [],
 				"name": "retrieve",
@@ -27,6 +91,19 @@
 					}
 				],
 				"name": "store",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_value",
+						"type": "string"
+					}
+				],
+				"name": "storeValue",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -63,7 +140,7 @@
 		"compilationTarget": {
 			"contracts/1_Storage.sol": "Storage"
 		},
-		"evmVersion": "cancun",
+		"evmVersion": "istanbul",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -76,11 +153,11 @@
 	},
 	"sources": {
 		"contracts/1_Storage.sol": {
-			"keccak256": "0xa3de51030e5784d1fc25677298a0bd61bf7eac541ca2fc94232f1b7dc5a89e21",
+			"keccak256": "0x7d9a4ee503aa7beaf59fa750649c92929c91fbb27fd0aaa1f7a2e7ff8296f8ae",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://aac95d61b7ce356e2da8d93eb66abfabbeadebb4f44d3d78fd14414e7ac918ba",
-				"dweb:/ipfs/QmZ6otiNvDfrWzEiQJBAdWUurwEvsemrbBZgD9hj6qSki1"
+				"bzz-raw://fac3ab8033e1dce48ef92f4599c4331136005a8d04d12865013b5aa3cfbdb52b",
+				"dweb:/ipfs/QmekyFzHmuh6GktpQPb3FHUhHHR2gEhZgE2DDnc4mjHSch"
 			]
 		}
 	},
