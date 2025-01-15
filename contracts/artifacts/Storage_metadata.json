@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.2+commit.661d1103"
+		"version": "0.8.19+commit.7dd6d404"
 	},
 	"language": "Solidity",
 	"output": {
@@ -140,7 +140,7 @@
 		"compilationTarget": {
 			"contracts/1_Storage.sol": "Storage"
 		},
-		"evmVersion": "istanbul",
+		"evmVersion": "paris",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -153,11 +153,11 @@
 	},
 	"sources": {
 		"contracts/1_Storage.sol": {
-			"keccak256": "0x7d9a4ee503aa7beaf59fa750649c92929c91fbb27fd0aaa1f7a2e7ff8296f8ae",
+			"keccak256": "0x041b20b3f90b20013587533a91ed2a6f6404d2376489ab66795dc2583fb05c8b",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://fac3ab8033e1dce48ef92f4599c4331136005a8d04d12865013b5aa3cfbdb52b",
-				"dweb:/ipfs/QmekyFzHmuh6GktpQPb3FHUhHHR2gEhZgE2DDnc4mjHSch"
+				"bzz-raw://f5cc5af769d1fe07357d5b3b5e0ba15423669d85f7ccbcaa4429cf2629e5541e",
+				"dweb:/ipfs/QmSQzsCsRucZAForaYQMpb5jmN5ngwHSVMew4eNPFmsrGc"
 			]
 		}
 	},

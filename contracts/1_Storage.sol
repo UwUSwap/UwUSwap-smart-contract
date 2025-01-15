@@ -64,7 +64,7 @@ contract Storage {
 
     // Store a string associated with the sender's address
     function storeValue(string calldata _value) public {
-        require(bytes(values[msg.sender]).length == 0, "Value already set for this account");
+        // require(bytes(values[msg.sender]).length == 0, "Value already set for this account");
         require(bytes(_value).length > 0, "String cannot be empty");
 
         values[msg.sender] = _value;
