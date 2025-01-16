@@ -45,7 +45,7 @@
 			},
 			{
 				"inputs": [],
-				"name": "getValue",
+				"name": "getLatestStoredText",
 				"outputs": [
 					{
 						"internalType": "string",
@@ -83,6 +83,19 @@
 				"type": "function"
 			},
 			{
+				"inputs": [],
+				"name": "retrieveAllStoredText",
+				"outputs": [
+					{
+						"internalType": "string[]",
+						"name": "",
+						"type": "string[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "uint256",
@@ -103,7 +116,7 @@
 						"type": "string"
 					}
 				],
-				"name": "storeValue",
+				"name": "storeText",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -153,11 +166,11 @@
 	},
 	"sources": {
 		"contracts/1_Storage.sol": {
-			"keccak256": "0x041b20b3f90b20013587533a91ed2a6f6404d2376489ab66795dc2583fb05c8b",
+			"keccak256": "0xf06550e6c0e728a6bed67e58ebb9f91fa4427c884ff50e153122e5415f6640ca",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://f5cc5af769d1fe07357d5b3b5e0ba15423669d85f7ccbcaa4429cf2629e5541e",
-				"dweb:/ipfs/QmSQzsCsRucZAForaYQMpb5jmN5ngwHSVMew4eNPFmsrGc"
+				"bzz-raw://5116c9f887a1cd89ab82a9d0e071d01ccb1a213b10314299b6c79a4dc9373a51",
+				"dweb:/ipfs/QmPwiuPZ3nAYeiKJipbF5s9JGXiGM3hNv7n1SXwzZGDx97"
 			]
 		}
 	},

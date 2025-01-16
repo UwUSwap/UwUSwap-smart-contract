@@ -58,25 +58,28 @@ contract Storage {
     // }
 
     // Mapping to store a string for each address
-    mapping(address => string) private values;
+    mapping(address => string[]) private values;
 
     event StringStored(address indexed user, string value);
 
     // Store a string associated with the sender's address
-    function storeValue(string calldata _value) public {
+    function storeText(string calldata _value) public {
         // require(bytes(values[msg.sender]).length == 0, "Value already set for this account");
         require(bytes(_value).length > 0, "String cannot be empty");
 
-        values[msg.sender] = _value;
+        values[msg.sender].push(_value);
 
         // Emit an event
         emit StringStored(msg.sender, _value);
     }
 
     // Retrieve the string associated with the sender's address
-    function getValue() public view returns (string memory) {
-        require(bytes(values[msg.sender]).length != 0, "No value set for this account");
+    function getLatestStoredText() public view returns (string memory) {
+        return values[msg.sender][values[msg.sender].length - 1];
+    }
 
+    // Retrieve all text as an array
+    function retrieveAllStoredText() public view returns (string[] memory) {
         return values[msg.sender];
     }
 }
